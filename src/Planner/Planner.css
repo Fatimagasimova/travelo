@@ -1,17 +1,7 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  /* overflow: auto; səhifədə scroll olsun */
-}
-
 .planner1 {
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
-  /* padding: 20px; */
-  height: 100vh;
-  /* width: 100vw;      ekranın eni */
   box-sizing: border-box;
   background-image: url('https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
@@ -56,7 +46,6 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: rgba(215, 245, 250, 0.116);
   max-height: 600px; /* buranı ehtiyacına uyğun dəyişə bilərsən */
   overflow-y: auto;
 }
@@ -114,21 +103,6 @@ input:focus {
   background-color: rgb(143, 25, 25);
 }
 
-.plancard {
-  margin: 8px 0;
-  padding: 10px;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  max-width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border: 1px solid #ddd;
-  font-size: 16px;
-}
 
 .plan-card b {
   color: #333;
@@ -194,6 +168,20 @@ input:focus {
   font-size: 16px;
 }
 
+.plancard p {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 #f1f1f1;
+  margin: 0;
+  padding: 5px 0;
+  padding-right: 6px;
+  box-sizing: content-box;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.4;
+  max-height: 60px;
+}
+
 /* Düymələri yan-yana düzür */
 .buttons {
   display: flex;
@@ -208,7 +196,7 @@ input:focus {
 @media (max-width: 768px) {
   .trip-planner {
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     margin: 20px auto;
     gap: 20px;
     padding: 15px;
@@ -222,7 +210,8 @@ input:focus {
 
   .plans-section {
     flex: none;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     max-height: 400px; /* daha kiçik hündürlük */
   }
 
@@ -236,6 +225,8 @@ input:focus {
   .clear-all {
     font-size: 14px;
     padding: 8px 10px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .plancard {
@@ -260,9 +251,10 @@ input:focus {
 /* Kiçik mobil ekranlar üçün */
 @media (max-width: 480px) {
   .trip-planner {
-    width: 95%;
+    width: 80%;
     padding: 10px;
   }
+
 
   .plans-section {
     max-height: 300px;
@@ -278,6 +270,8 @@ input:focus {
   .clear-all {
     font-size: 13px;
     padding: 7px 9px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .plancard {

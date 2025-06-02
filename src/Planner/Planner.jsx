@@ -201,7 +201,7 @@ const handleSaveNote = (index) => {
           </button>
         </>
       ) : (
-        <p>Note: {m.note || "no info"}</p>
+        <p>{m.note || "no info"}</p>
       )}
     </div>
 

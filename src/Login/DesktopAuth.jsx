@@ -49,7 +49,7 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
       alert("Please enter a valid email.");
       return;
     }
-    if (password.length < 6) {
+    if (password.length < 8) {
       alert("Password should be at least 6 characters.");
       return;
     }
@@ -66,10 +66,11 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
     // Save new user
     users.push({ username, email, password });
     localStorage.setItem("users", JSON.stringify(users));
-
-    alert("Registration successful! You can now login.");
+    localStorage.setItem("loggedInUser", JSON.stringify(newUser)); 
+    onLogin(newUser); 
+    alert("Registration successful!");
+    navigate("/profile");
     setRegisterData({ username: "", email: "", password: "" });
-    setActive(false); // switch to login
   };
 
   // Login user by checking localStorage

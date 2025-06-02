@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigate } from "react-router-dom";
 import Navbar from './Navbar/Navbar.jsx';
 import Home from './Home/Home.jsx';
 import Explore from './Explore/Explore.jsx';   
@@ -60,7 +61,8 @@ function App() {
         <Route
           path="/profile"
           element={<Profile loggedInUser={loggedInUser} onLogout={handleLogout} />}
-        />    
+        /> 
+        <Route path="*" element={<Navigate to="/" />} />   
       </Routes>
       
     </Router>

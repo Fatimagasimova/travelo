@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 100px auto;
   padding: 15px;
-  color: #333;
+  color: #000;
   overflow-y: auto;
 }
 
@@ -19,7 +19,7 @@
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #4a90e2;
+  border: 3px solid #189827;
 }
 
 /* Düymələr */
@@ -87,9 +87,9 @@
 }
 
 .stat-card h3 {
-  font-size: 28px;
+  font-size: 27px;
   margin-bottom: 6px;
-  color: #4a90e2;
+  color: #189827;
 }
 
 /* Bölmələr başlıqları */
@@ -99,7 +99,7 @@
   margin: 40px 0 15px;
   border-bottom: 2px solid #7b7f5d;
   padding-bottom: 6px;
-  color: #546a20;
+  color:  #189827;
   font-size: 25px;
 }
 
@@ -171,6 +171,8 @@ justify-content: center;  gap: 18px;
   align-items: center;
   transition: transform 0.2s ease;
   cursor: pointer;
+  border-top: 4px solid #189827;
+
 }
 
 .plan-card:hover, .fav-card:hover, .stat-card:hover {
@@ -271,10 +273,9 @@ input[type="email"]:focus {
 }
 
 .review-infos {
-  max-height: 100px;
   overflow-y: auto;
   scrollbar-width: thin;
-  /* scrollbar-color: #4a90e2 #f1f1f1; */
+  scrollbar-color: #4a90e2 #f1f1f1;
   margin: 0;
   padding: 5px 0;
   padding-right: 6px;
@@ -282,10 +283,10 @@ input[type="email"]:focus {
   white-space: normal;
   word-break: break-word;
   line-height: 1.4;
-  height: 100px; 
+  height: 50px; 
 }
 .reviews-name {
-  color: rgb(103, 140, 9);
+  color:  #16b529;
   /* font-style: italic; */
   font-weight: bold;
   font-size: 25px;
@@ -302,23 +303,6 @@ input[type="email"]:focus {
     gap: 20px;
   }
 
-
-
-  /* .plan-card {
-    flex-direction: column;
-    align-items: flex-start;
-    max-height: none;
-  } */
-
-  /* .plan-city-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .plan-card p,
-  .plan-card h4 {
-    position: static;
-  } */
 }
 
 

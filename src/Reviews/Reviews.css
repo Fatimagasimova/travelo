@@ -9,8 +9,7 @@
 .review-wrapper h2 {
   font-size: 45px;
   margin-bottom: 20px;
-  font-style: italic;
-  color: #657326;
+  color:  #189827;
 }
 
 .review-list {
@@ -107,12 +106,12 @@ img.review-image {
 }
 
 .planrev-btn {
-  background-color: #28a745;
+  background-color: #cca217;
   color: white;
 }
 
 .planrev-btn:hover {
-  background-color: #218838;
+  background-color: #888421;
 }
 
 .morerev-btn {
@@ -125,7 +124,7 @@ img.review-image {
 }
 
 .review-text h2 {
-  color: rgb(90, 143, 40);
+  color:  #23b534;
   margin-bottom: 0;
   font-size: 25px;
   font-style: normal;
