@@ -64,6 +64,7 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
     }
 
     // Save new user
+    const newUser = { username, email, password }; // <- bunu əlavə et
     users.push({ username, email, password });
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("loggedInUser", JSON.stringify(newUser)); 
@@ -142,9 +143,9 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
             <button type="submit" className="desktop-btn">Login</button>
             <p>or login with social platforms</p>
             <div className="social-icons">
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook" /></a>
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/google-logo--v1.png" alt="google" /></a>
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" /></a>
+              <a href="https://www.facebook.com/"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook" /></a>
+              <a href="https://www.google.com/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/google-logo--v1.png" alt="google" /></a>
+              <a href="https://github.com/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" /></a>
               <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin" /></a>
             </div>
           </form>
@@ -196,9 +197,9 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
             <button type="submit" className="desktop2-btn">Register</button>
             <p>or register with social platforms</p>
             <div className="social-icons">
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook" /></a>
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/google-logo--v1.png" alt="google" /></a>
-              <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" /></a>
+              <a href="https://www.facebook.com/"><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook" /></a>
+              <a href="https://www.google.com/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/google-logo--v1.png" alt="google" /></a>
+              <a href="https://github.com/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" /></a>
               <a href="#"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin" /></a>
             </div>
           </form>
