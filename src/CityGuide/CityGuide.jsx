@@ -233,10 +233,10 @@ export default function CityGuidePage() {
 
       <div className="flight-search-section">
         <h2>Find Flights to {selectedCity.name}</h2>
-        {/* <AmadeusCitySearch
+        <AmadeusCitySearch
           destinationCityCode={iataCode}
           destinationCityName={selectedCity.name}
-        /> */}
+        />
       </div>
 
       {/* <Hotels cityCode={iataCode} /> */}
