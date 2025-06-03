@@ -45,24 +45,24 @@ function App() {
   return (
       <Router>
 <Navbar loggedInUser={loggedInUser} onLogout={handleLogout} />      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/cityguide/:name" element={<CityGuide />} />
-        <Route path="/planner" element={<Planner markers={markers} setMarkers={setMarkers} />} />
-        <Route path="/map" element={<Map markers={markers} />} />
-<Route path="/cityguide" element={<CityGuide />} />
-        <Route path="/reviews" element={<Reviews />}  />
+        <Route path="/travelo" element={<Home />} />
+        <Route path="/travelo/explore" element={<Explore />} />
+        <Route path="/travelo/cityguide/:name" element={<CityGuide />} />
+        <Route path="/travelo/planner" element={<Planner markers={markers} setMarkers={setMarkers} />} />
+        <Route path="/travelo/map" element={<Map markers={markers} />} />
+<Route path="/travelo/cityguide" element={<CityGuide />} />
+        <Route path="/travelo/reviews" element={<Reviews />}  />
         
 
 <Route
-          path="/login"
+          path="/travelo/login"
           element={<Login onLogin={handleLogin} />}
         />
         <Route
-          path="/profile"
+          path="/travelo/profile"
           element={<Profile loggedInUser={loggedInUser} onLogout={handleLogout} />}
         /> 
-        <Route path="*" element={<Navigate to="/" />} />   
+        <Route path="*" element={<Navigate to="/travelo" />} />   
       </Routes>
       
     </Router>

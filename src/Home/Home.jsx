@@ -83,23 +83,23 @@ export default function Home() {
         <div className="reviews">
           <div className="review-card">
             <p>"Travelo made planning my vacation so simple and fun!"</p>
-            <h4>— Nargiz</h4>
+            <h4>— John</h4>
           </div>
           <div className="review-card">
             <p>"I discovered places I would have never found without this app."</p>
-            <h4>— Kamran</h4>
+            <h4>— Mark</h4>
           </div>
           <div className="review-card">
             <p>"A very user-friendly app that made my solo trip smooth and memorable."</p>
-            <h4>— Laman</h4>
+            <h4>— Harry</h4>
           </div>
           <div className="review-card">
             <p>"Booking and planning was effortless. The map integration is a game changer!"</p>
-            <h4>— Elvin</h4>
+            <h4>— Drew</h4>
           </div>
           <div className="review-card">
             <p>"Travelo helped me find hidden gems in every city I visited. Highly recommended!"</p>
-            <h4>— Aysel</h4>
+            <h4>— Kate</h4>
           </div>
         </div>
       </section>

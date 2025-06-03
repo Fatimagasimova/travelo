@@ -1,4 +1,5 @@
 .planner1 {
+  height: 100% !important;
   margin-top: 80px;
   display: flex;
   justify-content: center;

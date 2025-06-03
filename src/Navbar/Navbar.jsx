@@ -29,22 +29,22 @@ export default function Navbar({ loggedInUser, onLogout }) {
         </div>
 
         <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          {["/", "/explore", "/planner", "/map", "/reviews"].map((path, index) => (
+          {["/travelo/", "/travelo/explore", "/travelo/planner", "/travelo/map", "/travelo/reviews"].map((path, index) => (
             <NavLink
               key={index}
               to={path}
-              end={path === "/"}
+              end={path === "/travelo/"}
               className={({ isActive }) =>
                 `navlink-style ${isActive ? "active-link" : ""}`
               }
               onClick={closeMenu}
             >
               {{
-                "/": "Home",
-                "/explore": "Explore",
-                "/planner": "Journey",
-                "/map": "Map",
-                "/reviews": "Reviews",
+                "/travelo/": "Home",
+                "/travelo/explore": "Explore",
+                "/travelo/planner": "Journey",
+                "/travelo/map": "Map",
+                "/travelo/reviews": "Reviews",
               }[path]}
             </NavLink>
           ))}
@@ -54,7 +54,7 @@ export default function Navbar({ loggedInUser, onLogout }) {
           {loggedInUser ? (
             <>
               <NavLink
-                to="/profile"
+                to="/travelo/profile"
                 className={({ isActive }) =>
                   `profile-icon ${isActive ? "active-link" : ""}`
                 }
@@ -72,7 +72,7 @@ export default function Navbar({ loggedInUser, onLogout }) {
             </>
           ) : (
             <NavLink
-              to="/login"
+              to="/travelo/login"
               className={({ isActive }) =>
                 `navlink-style ${isActive ? "active-link" : ""}`
               }

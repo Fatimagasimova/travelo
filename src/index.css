@@ -2,10 +2,13 @@
 *{
   margin: 0;
   padding: 0;
+
 }
 
 body {
     background: linear-gradient(to right, #f3ece4, #fef9d6);
+    width: 100%;
+    height: 100% !important;
 }
 
 
