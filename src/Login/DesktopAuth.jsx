@@ -64,13 +64,13 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
     }
 
     // Save new user
-    const newUser = { username, email, password }; // <- bunu əlavə et
+    const newUser = { username, email, password }; 
     users.push({ username, email, password });
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("loggedInUser", JSON.stringify(newUser)); 
     onLogin(newUser); 
     alert("Registration successful!");
-    navigate("/profile");
+    navigate("/travelo/profile");
     setRegisterData({ username: "", email: "", password: "" });
   };
 
@@ -91,7 +91,7 @@ export default function DesktopAuth({ onLogin }) {  // <- burada əlavə et
       alert(`Welcome back, ${user.username}!`);
       localStorage.setItem("loggedInUser", JSON.stringify(user)); // ƏLAVƏ ET
       onLogin(user);  // burada artıq onLogin var və işləyəcək
-      navigate("/profile");
+      navigate("/travelo/profile");
     } else {
       alert("Invalid username or password.");
     }

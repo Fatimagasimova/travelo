@@ -60,12 +60,12 @@ const Review = ({ cityId }) => {
   const handleMoreClick = (city) => {
     if (!city) return;
     localStorage.setItem("cityDetails", JSON.stringify(city));
-    navigate(`/cityguide/${city.name}`);
+    navigate(`/travelo/cityguide/${city.name}`);
   };
 
   const handlePlanClick = (cityName) => {
     localStorage.setItem("selectedCity", cityName);
-    navigate("/planner/");
+    navigate("/travelo/planner/");
   };
 
   if (loading) return <div>Loading...</div>;

@@ -73,7 +73,7 @@ const [showRegisterPassword, setShowRegisterPassword] = useState(false);
     onLogin(newUser);
 
     alert("Registration successful!");
-    navigate("/profile");
+    navigate("/travelo/profile");
     setRegisterData({ username: "", email: "", password: "" });
   };
 
@@ -94,7 +94,7 @@ const [showRegisterPassword, setShowRegisterPassword] = useState(false);
       alert(`Welcome back, ${user.username}!`);
       localStorage.setItem("loggedInUser", JSON.stringify(user)); // ƏLAVƏ ET
       onLogin(user);  // burada artıq onLogin var və işləyəcək
-      navigate("/profile");
+      navigate("/travelo/profile");
     } else {
       alert("Invalid username or password.");
     }

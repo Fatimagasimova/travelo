@@ -52,7 +52,7 @@ const [editNote, setEditNote] = useState("");
 
   const handleMap = (cityName) => {
     localStorage.setItem("selectedCity", cityName);
-    navigate("/map/");
+    navigate("/travelo/map");
   };
 
   const handleChange = (e) => {

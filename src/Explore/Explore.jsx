@@ -54,12 +54,12 @@ export default function ExplorePage() {
 
   const handleMore = (cityData) => {
     localStorage.setItem("cityDetails", JSON.stringify(cityData));
-    navigate(`/cityguide/${cityData.name}`);
+    navigate(`/travelo/cityguide/${cityData.name}`);
   };
 
   const handlePlan = (cityName) => {
     localStorage.setItem("selectedCity", cityName);
-    navigate("/planner/");
+    navigate("/travelo/planner/");
   };
 
   useEffect(() => {

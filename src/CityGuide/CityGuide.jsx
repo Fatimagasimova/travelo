@@ -15,7 +15,7 @@ export default function CityGuidePage() {
     if (cityData) {
       setSelectedCity(JSON.parse(cityData));
     } else {
-      navigate("/explore");
+      navigate("/travelo/explore");
     }
   }, [navigate]);
 
@@ -35,11 +35,11 @@ export default function CityGuidePage() {
 
   const handlePlan = (cityName) => {
     localStorage.setItem("selectedCity", cityName);
-    navigate("/planner");
+    navigate("/travelo/planner");
   };
 
   const handleBack = () => {
-    navigate("/explore");
+    navigate("/travelo/explore");
   };
 
   const loggedInUserString = localStorage.getItem("loggedInUser") || "";
@@ -239,7 +239,6 @@ export default function CityGuidePage() {
         />
       </div>
 
-      {/* <Hotels cityCode={iataCode} /> */}
 
       <div className="city-review-section">
         <h2>Community Reviews</h2>
