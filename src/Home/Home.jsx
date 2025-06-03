@@ -54,7 +54,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <a href="/explore" className="btn">Start Exploring</a>
+        <a href="/travelo/explore" className="btn">Start Exploring</a>
       </section>
 
       <section className="planner">
@@ -75,7 +75,7 @@ export default function Home() {
             <p>Get suggestions for top attractions, restaurants, and hidden gems.</p>
           </div>
         </div>
-        <a href="/planner" className="btn-secondary">Plan Your Trip</a>
+        <a href="/travelo/planner" className="btn-secondary">Plan Your Trip</a>
       </section>
 
       <section className="testimonials">
@@ -107,7 +107,7 @@ export default function Home() {
       <footer className="footer">
         <p>© 2025 Travelo. All rights reserved.</p>
         <nav>
-          <a href="/about">About Us</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy Policy</a>
+          <a href="/travelo/about">About Us</a> | <a href="/travelo/contact">Contact</a> | <a href="/travelo/privacy">Privacy Policy</a>
         </nav>
       </footer>
     </div>
